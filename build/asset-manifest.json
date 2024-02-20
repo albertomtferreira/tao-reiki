@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tao-reiki/static/css/main.f855e6bc.css",
-    "main.js": "/tao-reiki/static/js/main.4ef9f5f1.js",
+    "main.js": "/tao-reiki/static/js/main.e0aabf69.js",
     "static/js/453.6d165895.chunk.js": "/tao-reiki/static/js/453.6d165895.chunk.js",
     "index.html": "/tao-reiki/index.html",
     "main.f855e6bc.css.map": "/tao-reiki/static/css/main.f855e6bc.css.map",
-    "main.4ef9f5f1.js.map": "/tao-reiki/static/js/main.4ef9f5f1.js.map",
+    "main.e0aabf69.js.map": "/tao-reiki/static/js/main.e0aabf69.js.map",
     "453.6d165895.chunk.js.map": "/tao-reiki/static/js/453.6d165895.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.4ef9f5f1.js"
+    "static/js/main.e0aabf69.js"
   ]
 }
