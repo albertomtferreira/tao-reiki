@@ -1,0 +1,102 @@
+/* ============================================
+   BASE STYLES - Reset, Variables, Global
+   ============================================ */
+
+/* CSS Custom Properties - Design Tokens */
+:root {
+  /* Colors */
+  --color-primary: #667eea;
+  --color-secondary: #764ba2;
+  --color-text: #333;
+  --color-text-light: #555;
+  --color-text-muted: #666;
+  --color-text-gray: #999;
+  --color-white: white;
+  --color-bg-light: #f8f9fa;
+  --color-bg-lighter: #e9ecef;
+  --color-success-bg: #d4edda;
+  --color-success-text: #155724;
+  --color-success-border: #c3e6cb;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-light: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  --gradient-reverse: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  --gradient-section: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+
+  /* Spacing */
+  --section-padding: 6rem 2rem;
+  --section-padding-mobile: 4rem 1.5rem;
+  --container-max-width: 1200px;
+
+  /* Border Radius */
+  --border-radius-sm: 8px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 15px;
+  --border-radius-xl: 20px;
+  --border-radius-pill: 50px;
+  --border-radius-circle: 50%;
+
+  /* Shadows */
+  --shadow-xs: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 6px 12px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 8px 25px rgba(102, 126, 234, 0.2);
+  --shadow-xxl: 0 10px 30px rgba(102, 126, 234, 0.3);
+
+  /* Transitions */
+  --transition-standard: all 0.3s ease;
+  --transition-transform: transform 0.3s ease;
+
+  /* Font Sizes */
+  --font-size-xs: 0.85rem;
+  --font-size-sm: 0.9rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.1rem;
+  --font-size-lg: 1.3rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 1.8rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3.5rem;
+
+  /* Breakpoints (for reference in media queries) */
+  --breakpoint-mobile: 768px;
+  --breakpoint-tablet: 968px;
+}
+
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* ============================================
+   APP WRAPPER
+   ============================================ */
+
+.App {
+  min-height: 100vh;
+  width: 100%;
+}
