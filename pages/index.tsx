@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import Navigation from '../src/components/Navigation'
 import Hero from '../src/components/Hero'
@@ -7,7 +8,7 @@ import Blog from '../src/components/Blog'
 import Booking from '../src/components/Booking'
 import Footer from '../src/components/Footer'
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <>
       <Head>
@@ -27,3 +28,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home

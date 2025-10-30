@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-const Navigation = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const Navigation: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string): void => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });

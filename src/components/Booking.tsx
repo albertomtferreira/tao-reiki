@@ -1,7 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 
-const Booking = () => {
-  const [formData, setFormData] = useState({
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  preferredDate: string;
+  sessionType: string;
+  message: string;
+}
+
+const Booking: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     phone: '',
@@ -10,9 +19,9 @@ const Booking = () => {
     message: ''
   });
 
-  const [formStatus, setFormStatus] = useState('');
+  const [formStatus, setFormStatus] = useState<string>('');
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>): void => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -20,7 +29,7 @@ const Booking = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
 
     // For now, just show a success message
@@ -185,7 +194,7 @@ const Booking = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  rows="5"
+                  rows={5}
                   placeholder="Tell me a bit about what you'd like to work on or any questions you have..."
                 ></textarea>
               </div>

@@ -1,9 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, MouseEvent } from 'react';
 
-const Blog = () => {
-  const [selectedPost, setSelectedPost] = useState(null);
+interface BlogPost {
+  id: number;
+  title: string;
+  excerpt: string;
+  date: string;
+  category: string;
+  content: string;
+}
 
-  const blogPosts = [
+const Blog: React.FC = () => {
+  const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
+
+  const blogPosts: BlogPost[] = [
     {
       id: 1,
       title: 'Understanding the Seven Chakras',
@@ -58,12 +67,12 @@ These simple practices can help you maintain balance, reduce stress, and stay co
     }
   ];
 
-  const openPost = (post) => {
+  const openPost = (post: BlogPost): void => {
     setSelectedPost(post);
     document.body.style.overflow = 'hidden';
   };
 
-  const closePost = () => {
+  const closePost = (): void => {
     setSelectedPost(null);
     document.body.style.overflow = 'auto';
   };

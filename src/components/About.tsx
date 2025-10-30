@@ -1,6 +1,6 @@
 import React from 'react';
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <section className="about" id="about">
       <div className="about-container">

@@ -1,7 +1,13 @@
 import React from 'react';
 
-const Reiki = () => {
-  const benefits = [
+interface Benefit {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+const Reiki: React.FC = () => {
+  const benefits: Benefit[] = [
     {
       icon: 'fa-spa',
       title: 'Stress Reduction',
