@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Blog.css';
 
 const Blog = () => {
   const [selectedPost, setSelectedPost] = useState(null);

@@ -1,5 +1,4 @@
 import React from 'react';
-import './Reiki.css';
 
 const Reiki = () => {
   const benefits = [
