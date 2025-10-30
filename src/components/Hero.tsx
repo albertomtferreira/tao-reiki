@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Hero = () => {
-  const scrollToBooking = () => {
+const Hero: React.FC = () => {
+  const scrollToBooking = (): void => {
     const element = document.getElementById('booking');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
